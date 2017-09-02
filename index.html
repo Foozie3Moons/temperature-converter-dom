@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <title>Temperature Converter</title>
 </head>
 <body>
   <div class="container">
@@ -13,24 +13,19 @@
     </div>
     <form action="#" method="GET" id="temp-converter">
       <input type="text" name="temp" id="temp" />
-      <h2>
-        Convert To:
-      </h2>
       <div id="radio-input">
-        <input type="radio" name="temp-type" value="fahrenheight" /> &degF
-        <input type="radio" name="temp-type" value="celcius" /> &degC
+        <input type="radio" name="temp-type" title="fahrenheight" id="fahrenheight" value="celcius" /><label for="fahrenheight" class="deg">&degF</label>
+        <input type="radio" name="temp-type" title="celcius" id="celcius" value="fahrenheight" /><label for="celcius" class="deg">&degC</label>
       </div>
       <div id="buttons">
-        <input type="button" class="button" value="Submit"/>
+        <input type="button" class="button" value="Convert To..."/>
         <input type="reset" class="button" value="Reset" />
       </div>
+      <div class="output">
+        <output type="output" name="result"></output>
+      </div>
     </form>
-    <div class="output">
-      Default Text
-    </div>
   </div>
-
-
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
